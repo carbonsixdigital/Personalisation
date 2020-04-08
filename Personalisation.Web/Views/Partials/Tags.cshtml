@@ -1,0 +1,17 @@
+﻿@inherits UmbracoViewPage<ISiteContent>
+@if (Model == null) { return; }
+
+<div class="container-fluid p-2">
+    <div class="row">
+        <div class="col-12 text-right">
+            @if (Model.ProfileTags != null)
+            {
+                foreach (var tag in Model.ProfileTags.OrderByDescending(x => x.Score))
+                {
+                    <button type="button" class="btn btn-primary">@tag.Tag <span class="badge badge-light">@tag.Score</span></button>
+                }
+                @Html.ActionLink("Clear", "RemoveProfileTags", "PersonalisationSurface", new { area = "personalisation" }, new { @class = "btn btn-danger" })
+            }
+        </div>
+    </div>
+</div>

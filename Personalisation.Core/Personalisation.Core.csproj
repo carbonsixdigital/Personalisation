@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>  
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Carbon Six Digital</Company>
+    <Authors>Gareth Wright</Authors>
+    <Description>A plugin for Umbraco 8 which allows you to personalise IPublishedContent collections.</Description>
+    <PackageProjectUrl>https://carbonsix.digital</PackageProjectUrl>
+    <PackageIcon></PackageIcon>
+    <RepositoryUrl>https://carbonsix.digital</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags></PackageTags>
+    <PackageDescription>A plugin for Umbraco 8 which allows you to personalise IPublishedContent collections.</PackageDescription>
+    <Version>1.0.1.0</Version>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <AssemblyName>Personalisation.Core</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UmbracoCms.Core" Version="8.2.3" />
+    <PackageReference Include="UmbracoCms.Web" Version="8.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <Content Include="App_Plugins/personalisation/**/*.*" copyToOutput="true">
+      <IncludeInPackage>true</IncludeInPackage>
+      <CopyToOutput>true</CopyToOutput>
+      <BuildAction>Content</BuildAction>
+      <copyToOutput>true</copyToOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>-->
+  <!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if $(ConfigurationName) == Debug xcopy &quot;$(ProjectDir)app_plugins&quot; &quot;$(SolutionDir)punkOptimise.Web\app_plugins&quot; /D /y /s /r" />
+  </Target>-->
+
+</Project>

@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IGeneric>
+@{
+    Layout = "~/views/master.cshtml";
+}
+<div class="container-fluid mb-25">
+    <h1>@Model.Name</h1>
+
+    <div class="row">
+        <div class="col-12">
+            @foreach (var tag in Model.Tags)
+            {
+                <span class="badge badge-info">@tag</span>
+            }
+        </div>
+    </div>
+</div>
+
