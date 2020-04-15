@@ -5,6 +5,12 @@ It works based on tags on pages and content and stores these against members eff
 
 Upon a repeat visit, the code pulls the member's persona from the database and back into session for efficent access. It then displays personalised content appropriately. 
 
+# nuget
+
+CarbonSixDigital.Personalisation.Core
+
+`Install-Package CarbonSixDigital.Personalisation.Core`
+
 # Screenshots
 
 ## Homepage
