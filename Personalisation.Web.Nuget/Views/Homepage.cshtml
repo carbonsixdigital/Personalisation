@@ -1,0 +1,69 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IHomepage>
+@{
+    Layout = "~/views/master.cshtml";
+}
+<div class="container-fluid">
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <h3>Personalised Navigation</h3>
+            @if (Model.HasPages)
+            {
+                <ul class="list-group list-group-horizontal-sm">
+                    @foreach (var page in Model.Pages)
+                    {
+                        <li class="list-group-item">
+                            <a href="@page.Url">@page.Name</a>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>no items available.</p>
+            }
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <h3>Personalised Promotions without backfill</h3>
+            @if (Model.HasPersonalisedPromotionsWithoutBackfill)
+            {
+                @Html.Partial("Partials/Promotions", Model.PersonalisedPromotionsWithoutBackfill)
+            }
+            else
+            {
+                <p>no items available.</p>
+            }
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <h3>Personalised Promotions with backfill</h3>
+            @if (Model.HasPersonalisedPromotions)
+            {
+                @Html.Partial("Partials/Promotions", Model.PersonalisedPromotions)
+            }
+            else
+            {
+                <p>no items available.</p>
+            }
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <h3>Promotions</h3>
+            @if (Model.HasPromotions)
+            {
+                @Html.Partial("Partials/Promotions", Model.Promotions)
+            }
+            else
+            {
+                <p>no items available.</p>
+            }
+        </div>
+    </div>
+</div>

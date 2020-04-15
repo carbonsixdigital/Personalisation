@@ -1,0 +1,22 @@
+﻿@inherits UmbracoViewPage<IEnumerable<Promotion>>
+@if (Model == null || !Model.Any()) { return; }
+
+<div class="row">
+    @foreach (var promo in Model)
+    {
+        <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+                <img src="@promo.Image" class="card-img-top rounded" />
+                <div class="card-body">
+                    <h5 class="card-title">@promo.Name</h5>
+                </div>
+                <div class="card-footer">
+                    @foreach (var tag in promo.Tags)
+                    {
+                        <span class="badge badge-secondary">@tag</span>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

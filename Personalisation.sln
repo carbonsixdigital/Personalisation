@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personalisation.Web", "Personalisation.Web\Personalisation.Web.csproj", "{CDA770DA-5618-4B52-B960-9897B3424BE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personalisation.Core", "Personalisation.Core\Personalisation.Core.csproj", "{1E04EB6A-8BB6-42CC-AD01-1D316C3CB5E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personalisation.Core", "Personalisation.Core\Personalisation.Core.csproj", "{1E04EB6A-8BB6-42CC-AD01-1D316C3CB5E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personalisation.Web.Nuget", "Personalisation.Web.Nuget\Personalisation.Web.Nuget.csproj", "{750AEBA7-898E-483A-A92D-62CEF04B16D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1E04EB6A-8BB6-42CC-AD01-1D316C3CB5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E04EB6A-8BB6-42CC-AD01-1D316C3CB5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E04EB6A-8BB6-42CC-AD01-1D316C3CB5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750AEBA7-898E-483A-A92D-62CEF04B16D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750AEBA7-898E-483A-A92D-62CEF04B16D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750AEBA7-898E-483A-A92D-62CEF04B16D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750AEBA7-898E-483A-A92D-62CEF04B16D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

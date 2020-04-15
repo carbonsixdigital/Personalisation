@@ -6,15 +6,16 @@
     <Company>Carbon Six Digital</Company>
     <Authors>Gareth Wright</Authors>
     <Description>A plugin for Umbraco 8 which allows you to personalise IPublishedContent collections.</Description>
-    <PackageProjectUrl>https://carbonsix.digital</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/carbonsixdigital/Personalisation</PackageProjectUrl>
     <PackageIcon></PackageIcon>
-    <RepositoryUrl>https://carbonsix.digital</RepositoryUrl>
+    <RepositoryUrl>https://github.com/carbonsixdigital/Personalisation</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags></PackageTags>
     <PackageDescription>A plugin for Umbraco 8 which allows you to personalise IPublishedContent collections.</PackageDescription>
     <Version>1.0.1.0</Version>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
-    <AssemblyName>Personalisation.Core</AssemblyName>
+    <AssemblyName>CarbonSixDigital.Personalisation.Core</AssemblyName>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
