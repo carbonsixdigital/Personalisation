@@ -36,6 +36,8 @@ viewModel.PersonalisedPromotionsWithoutBackfill = Personalise(viewModel.Promotio
 viewModel.Pages = Personalise(viewModel.MenuItems, true);
 ```
 
+There is also a Global.cs file that sets the persona to the database upon session end.  
+
 Please reference the controllers in the web project within the solution for an example of this. 
 
 # Umbraco Version
