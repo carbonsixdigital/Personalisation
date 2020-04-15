@@ -11,6 +11,9 @@ Upon a repeat visit, the code pulls the member's persona from the database and b
 
 There is a new website project in the solution with an example of how to use the nuget package. 
 
+- Important, remember to change the global.asax to use the Personalisation.Core.Global to upsert to database on session end. 
+
+
 # Screenshots
 
 ## Homepage
